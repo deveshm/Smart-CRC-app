@@ -1,0 +1,26 @@
+<table class="table table-striped" id="events">
+  <tr>
+    <th>Type</th>
+    <%= "<th>Name</th>".html_safe  unless events_for_install%>
+    <%= "<th>Phone</th>".html_safe  unless events_for_install%>
+    <th>Date/Time</th>
+    <th></th>
+  </tr>
+ <% @events.each do |event| %>
+ <% edit_path = edit_installation_event_path(event.installation,event) if events_for_install %>
+ <% edit_path = edit_event_path(event) unless events_for_install %>
+ <tr class="event">
+    <td><%= event.event_type %></td>
+    <%= "<td>#{event.installation.name}</td>".html_safe  unless events_for_install %>
+    <%= "<td>#{event.installation.phone}</td>".html_safe  unless events_for_install %>
+    <td><%= event.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+    <%unless event.note.blank?%>
+      <td class="action_link"><%= link_to image_tag("/assets/NotePresent.jpg",  alt: "Has Note",class: "has_note"),    edit_path, class: 'event_edit' , id:  "#{event.created_at.strftime('%Y%m%d%H%M%S')}"%></td>
+    <%else%>
+      <td class="action_link"><%= link_to image_tag("/assets/NoteNotPresent.jpg",  alt: "Has No Note",class: "has_no_note"),    edit_path, class: 'event_edit' , id:  "#{event.created_at.strftime('%Y%m%d%H%M%S')}"%></td>
+    <%end%>
+  </tr>
+  <% end %>
+
+</table>
+  <%= paginate @events %>

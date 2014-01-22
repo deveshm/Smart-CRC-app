@@ -1,0 +1,100 @@
+// Place all the styles related to the Alerts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.caption {
+  background-color:black;
+  border-radius: 5px;
+  color:white;
+  padding: 0px 2px;
+  font-size: 26px;
+  letter-spacing: -1px;
+  line-height: 28px;
+  font-weight: normal;
+  margin-bottom: 5px;
+    /* for IE */
+  filter:alpha(opacity=70);
+  /* CSS3 standard */
+  opacity:0.7;
+}
+
+.highlight {
+  border-style:solid;
+  border-width:3px;
+  border-color: #f89406;  
+}
+
+.contact_displays_as {
+    position: fixed;
+}
+
+.body-with-no-padding {
+	padding-top: 0px;
+}
+
+.off-sides
+{
+  padding: 1em;
+}
+
+.bigpicture
+{
+  width:1050px;
+  height:700px;
+  background-repeat: no-repeat;
+}
+
+div.lighten 
+{
+/* for IE */
+filter:alpha(opacity=50);
+/* CSS3 standard */
+opacity:0.5;
+}
+
+.shaded_background 
+{
+  background-color:#cfcfcf;  
+}
+
+#error_on_refresh
+{
+  background-color:#ff3300;
+  color:white;
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 28px;
+  font-weight: normal;
+  border-style:ridge;
+  border-width:3px;
+  margin-bottom: 1px;  
+}
+
+.contact {
+  padding: 0px 2px;
+  border-radius: 5px;
+  background-color:black;
+  color:lightblue;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+    /* for IE */
+  filter:alpha(opacity=70);
+  /* CSS3 standard */
+  opacity:0.8;
+}
+
+.messages-table {
+  margin: 0px 20px;
+  border-spacing: 20px;
+}
+
+.btn-xlarge {
+  padding: 18px 28px;
+  font-size: 22px;
+  line-height: normal;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+

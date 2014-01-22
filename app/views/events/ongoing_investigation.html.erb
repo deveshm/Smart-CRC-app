@@ -1,0 +1,37 @@
+
+	<% content_for :buttons do %>
+	  	<%= form_for [@installation,@event] do |f| %>
+
+			<% flash.each do |key, value| %>
+		     	<div class="alert alert-<%= key %>"><%= value %></div>
+		    <% end %>
+
+			<%= f.submit "I am OK", class: "btn btn-success btn-large btn-bold span12",  id: "send_OK" , name: "OK"%>
+			<div class="smaller_spacer"></div>
+
+			<%# may have to create a new form for this button %>
+			<%= f.submit "I am not OK", class: "btn btn-danger btn-large btn-bold span12",  id: "send_not_OK" , name: "notOK"%>
+		<% end %> 
+
+	<% end %>
+
+
+
+<% content_for :background_image do %>
+
+<%# pass in the three medication reminder times tp the startUp function %>
+<body class="body-with-no-padding" onLoad="startUp(<%=@installation.medication_reminder%>, <%=@installation.medication_reminder_two%>, <%=@installation.medication_reminder_three%>, true);">
+    <%if @photo_to_display && @photo_to_display.has_photo? %>	
+	   <div  class="bigpicture custom_carer_image investigation_ongoing" id="<%=@photo_to_display.photo_name_as_alphanumeric%>" style="background-image: url('<%= generate_photo_url %>')">
+
+    <%else%> 
+	   <div  class="bigpicture default_carer_image investigation_ongoing" id="default_investigation_image" style="background-image: url('/assets/default_landscape-investigation.jpg')" >
+    <%end%>
+
+<%end%>
+
+<% content_for :message do %>
+    <%= render  'events/caption'%>
+<%end%>
+
+  

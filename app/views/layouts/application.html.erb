@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lean</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header id="lean_menu" class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <nav>
+	        <ul class="nav pull-left">
+	          <li class="<%= 'active' if current_page?(alerts_path) || current_page?(root_path) %>"><%= link_to "Alerts",    alerts_path , id: 'list_alerts_link' %></li>
+	          <li class="<%= 'active' if current_page?(events_path) %>"><%= link_to "Events",    events_path , id: 'list_events_link' %></li>
+	          <li class="<%= 'active' if current_page?(installations_path) %>"><%= link_to "Installations",    installations_path , id: 'list_installations_link'%></li>
+	        </ul>
+	      </nav>
+	    </div>
+	  </div>
+	</header>
+
+
+	<div class="container">
+	  <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+	  <%= yield %>
+	</div>
+
+</body>
+</html>

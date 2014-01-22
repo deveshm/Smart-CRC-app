@@ -1,0 +1,29 @@
+<%if @photo_to_display %>
+	<div class="row span12 navbar-fixed-bottom off-sides">
+		<div class="span9">
+			<div class="spacer"></div>
+			<div class="row">
+				<%if @photo_to_display.interrupt?%>
+					<div class="contact highlight span" id="recieved_by"><%=@photo_to_display.conversation.display_as%></div>
+				<%else%>
+					<div class="contact span"  id="recieved_by"><%=@photo_to_display.conversation.display_as%></div>
+				<%end%>	
+			</div>
+			<div class="row">
+				<%if @photo_to_display.image_text%>
+					<%if @photo_to_display.interrupt?%>
+						<div class="caption highlight span"  id="photo_caption"><%=@photo_to_display.caption%></div>
+					<%else%>
+						<div class="caption span"  id="photo_caption"><%=@photo_to_display.caption%></div>
+					<%end%>	
+				<%end%>	
+			</div>		
+		</div>
+		<div class="span2 pull-right">
+			<div class="spacer"></div>
+			<div class="row">
+				<%= link_to "Messages", messages_conversation_path(@photo_to_display.conversation)  , id:  "view_messages", class: "btn btn-info btn-bold btn-xlarge"%>
+			</div>
+		</div>
+	</div>	
+<%end%>	

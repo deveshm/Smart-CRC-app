@@ -1,0 +1,33 @@
+<table class="table" id="lean_alerts">
+  <tr>
+    <th>Type</th>
+    <%= "<th>Name</th>".html_safe  unless alerts_for_install%>
+    <%= "<th>Phone</th>".html_safe  unless alerts_for_install%>
+    <th>Date/Time</th>
+    <th>Notes</th>
+  </tr>
+ <% @alerts.each do |alert| %>
+ <% edit_path = edit_installation_alert_path(alert.installation,alert) if alerts_for_install %>
+ <% edit_path = edit_alert_path(alert) unless alerts_for_install %>
+ 
+<%if alert.alert_type == "EMERGENCY"%>
+      <tr class="lean_alert" style="color: #fff; background: #FF3333;">
+<%else%>
+      <tr class="lean_alert">
+<%end%>
+
+    <td><%= alert.alert_type %></td>
+    <%= "<td>#{alert.installation.name}</td>".html_safe  unless alerts_for_install %>
+    <%= "<td>#{alert.installation.phone}</td>".html_safe  unless alerts_for_install %>
+    <td><%= alert.created_at.strftime("%Y-%m-%d %H:%M:%S") %></td>
+    <%unless alert.note.blank?%>
+      <td class="action_link"><%= link_to image_tag("/assets/NotePresent.jpg",  alt: "Has Note",class: "has_note"),    edit_path, class: 'alert_edit' , id:  "#{alert.created_at.strftime('%Y%m%d%H%M%S')}"%></td>
+    <%else%>
+      <td class="action_link"><%= link_to image_tag("/assets/NoteNotPresent.jpg",  alt: "Has No Note",class: "has_no_note"),    edit_path, class: 'alert_edit' , id:  "#{alert.created_at.strftime('%Y%m%d%H%M%S')}"%></td>
+    <%end%>
+
+  </tr>
+  <% end %>
+</table>
+
+  <%= paginate @alerts %>

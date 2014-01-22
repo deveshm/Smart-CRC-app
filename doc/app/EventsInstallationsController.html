@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class EventsInstallationsController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/events_installations_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    <!-- Included Modules -->
+<nav id="includes-section" class="section">
+  <h3 class="section-header">Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="EtagRemover.html">EtagRemover</a>
+  
+  
+  </ul>
+</nav>
+
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-create">#create</a>
+    
+    <li><a href="#method-i-determine_render_target_by_installation_state">#determine_render_target_by_installation_state</a>
+    
+    <li><a href="#method-i-edit">#edit</a>
+    
+    <li><a href="#method-i-generate_photo_url">#generate_photo_url</a>
+    
+    <li><a href="#method-i-handle_failed_edit">#handle_failed_edit</a>
+    
+    <li><a href="#method-i-handle_success_edit">#handle_success_edit</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-new">#new</a>
+    
+    <li><a href="#method-i-next">#next</a>
+    
+    <li><a href="#method-i-previous">#previous</a>
+    
+    <li><a href="#method-i-update">#update</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./EtagRemover.html">EtagRemover</a>
+  
+    <li><a href="./EtagRemover/Request.html">EtagRemover::Request</a>
+  
+    <li><a href="./EtagRemover/Response.html">EtagRemover::Response</a>
+  
+    <li><a href="./Alert.html">Alert</a>
+  
+    <li><a href="./Alert/AlertType.html">Alert::AlertType</a>
+  
+    <li><a href="./Event.html">Event</a>
+  
+    <li><a href="./Event/EventType.html">Event::EventType</a>
+  
+    <li><a href="./Installation.html">Installation</a>
+  
+    <li><a href="./Installation/State.html">Installation::State</a>
+  
+    <li><a href="./Message.html">Message</a>
+  
+    <li><a href="./Message/Type.html">Message::Type</a>
+  
+    <li><a href="./AlertsController.html">AlertsController</a>
+  
+    <li><a href="./AlertsHelper.html">AlertsHelper</a>
+  
+    <li><a href="./AlertsInstallationsController.html">AlertsInstallationsController</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Carousel.html">Carousel</a>
+  
+    <li><a href="./Conversation.html">Conversation</a>
+  
+    <li><a href="./ConversationsController.html">ConversationsController</a>
+  
+    <li><a href="./ErrorsController.html">ErrorsController</a>
+  
+    <li><a href="./ErrorsHelper.html">ErrorsHelper</a>
+  
+    <li><a href="./EventAnalyzer.html">EventAnalyzer</a>
+  
+    <li><a href="./EventObserver.html">EventObserver</a>
+  
+    <li><a href="./EventsController.html">EventsController</a>
+  
+    <li><a href="./EventsHelper.html">EventsHelper</a>
+  
+    <li><a href="./EventsInstallationsController.html">EventsInstallationsController</a>
+  
+    <li><a href="./InstallationMailer.html">InstallationMailer</a>
+  
+    <li><a href="./InstallationsController.html">InstallationsController</a>
+  
+    <li><a href="./InstallationsHelper.html">InstallationsHelper</a>
+  
+    <li><a href="./JobsController.html">JobsController</a>
+  
+    <li><a href="./MailSynch.html">MailSynch</a>
+  
+    <li><a href="./MessagesController.html">MessagesController</a>
+  
+    <li><a href="./UsageEvent.html">UsageEvent</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class EventsInstallationsController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(*params)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 105</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(*<span class="ruby-identifier">params</span>)
+    <span class="ruby-keyword">super</span>(*<span class="ruby-identifier">params</span>)
+
+    <span class="ruby-ivar">@carousel</span> = <span class="ruby-constant">Carousel</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-create" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="create-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">create</span>
+  <span class="ruby-identifier">event_type</span> = <span class="ruby-constant">Event</span><span class="ruby-operator">::</span><span class="ruby-constant">EventType</span><span class="ruby-operator">::</span><span class="ruby-constant">OK</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">key?</span> <span class="ruby-value">:OK</span>
+  <span class="ruby-identifier">event_type</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Event</span><span class="ruby-operator">::</span><span class="ruby-constant">EventType</span><span class="ruby-operator">::</span><span class="ruby-constant">HELP</span>
+
+  <span class="ruby-ivar">@event</span> = <span class="ruby-ivar">@installation</span>.<span class="ruby-identifier">create_event</span>(<span class="ruby-identifier">event_type</span>)
+  
+  <span class="ruby-identifier">human_readable_event_type</span>  = <span class="ruby-keyword">case</span> <span class="ruby-identifier">event_type</span>
+                               <span class="ruby-keyword">when</span> <span class="ruby-constant">Event</span><span class="ruby-operator">::</span><span class="ruby-constant">EventType</span><span class="ruby-operator">::</span><span class="ruby-constant">OK</span> <span class="ruby-keyword">then</span> <span class="ruby-string">&quot;OK notification&quot;</span>
+                               <span class="ruby-keyword">when</span> <span class="ruby-constant">Event</span><span class="ruby-operator">::</span><span class="ruby-constant">EventType</span><span class="ruby-operator">::</span><span class="ruby-constant">HELP</span> <span class="ruby-keyword">then</span> <span class="ruby-string">&quot;Help Request&quot;</span>
+                               <span class="ruby-keyword">end</span>
+
+   <span class="ruby-identifier">flash</span>[<span class="ruby-value">:error</span>] = <span class="ruby-node">&quot;Your #{human_readable_event_type} has failed to be processsed ,please try again&quot;</span> <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@event</span>
+   <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">new_installation_event_path</span>(<span class="ruby-ivar">@installation</span>)
+ <span class="ruby-keyword">end</span></pre>
+          </div><!-- create-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- create-method -->
+
+    
+      <div id="method-i-determine_render_target_by_installation_state" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">determine_render_target_by_installation_state</span><span
+            class="method-args">(installation)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="determine_render_target_by_installation_state-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">determine_render_target_by_installation_state</span>(<span class="ruby-identifier">installation</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">state</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Installation</span><span class="ruby-operator">::</span><span class="ruby-constant">State</span><span class="ruby-operator">::</span><span class="ruby-constant">ONGOING_EMERGENCY</span>
+      <span class="ruby-string">&quot;events/ongoing_emergency&quot;</span>  
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Installation</span><span class="ruby-operator">::</span><span class="ruby-constant">State</span><span class="ruby-operator">::</span><span class="ruby-constant">ONGOING_INVESTIGATION</span>
+      <span class="ruby-string">&quot;events/ongoing_investigation&quot;</span>  
+    <span class="ruby-keyword">when</span> <span class="ruby-constant">Installation</span><span class="ruby-operator">::</span><span class="ruby-constant">State</span><span class="ruby-operator">::</span><span class="ruby-constant">REQUIRE_CHECKIN</span>
+      <span class="ruby-string">&quot;events/require_checkin&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-string">&quot;events/sleeping&quot;</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- determine_render_target_by_installation_state-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- determine_render_target_by_installation_state-method -->
+
+    
+      <div id="method-i-edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">edit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="edit-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">edit</span>
+  <span class="ruby-ivar">@event</span>  = <span class="ruby-constant">Event</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-identifier">render</span> <span class="ruby-string">'installations/events/edit'</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- edit-method -->
+
+    
+      <div id="method-i-generate_photo_url" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">generate_photo_url</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="generate_photo_url-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">generate_photo_url</span>
+<span class="ruby-keyword">case</span> <span class="ruby-ivar">@installation</span>.<span class="ruby-identifier">state</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-constant">Installation</span><span class="ruby-operator">::</span><span class="ruby-constant">State</span><span class="ruby-operator">::</span><span class="ruby-constant">ONGOING_INVESTIGATION</span>
+    <span class="ruby-identifier">investigation_message_path</span> <span class="ruby-ivar">@photo_to_display</span>.<span class="ruby-identifier">photo_file_name</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@photo_to_display</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@photo_to_display</span>.<span class="ruby-identifier">start_of_conversation</span>     
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">default_message_path</span> <span class="ruby-ivar">@photo_to_display</span>.<span class="ruby-identifier">photo_file_name</span> <span class="ruby-operator">?</span> <span class="ruby-ivar">@photo_to_display</span> <span class="ruby-operator">:</span> <span class="ruby-ivar">@photo_to_display</span>.<span class="ruby-identifier">start_of_conversation</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- generate_photo_url-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- generate_photo_url-method -->
+
+    
+      <div id="method-i-handle_failed_edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">handle_failed_edit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="handle_failed_edit-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 90</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">handle_failed_edit</span> 
+    <span class="ruby-identifier">render</span> <span class="ruby-string">'installations/events/edit'</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- handle_failed_edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- handle_failed_edit-method -->
+
+    
+      <div id="method-i-handle_success_edit" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">handle_success_edit</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="handle_success_edit-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">handle_success_edit</span>
+    <span class="ruby-identifier">flash</span>[<span class="ruby-value">:success</span>] = <span class="ruby-string">&quot;Your Comment has been added/updated&quot;</span>   
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">installation_events_path</span>(<span class="ruby-ivar">@event</span>.<span class="ruby-identifier">installation</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- handle_success_edit-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- handle_success_edit-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 66</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+  <span class="ruby-ivar">@events</span> = <span class="ruby-ivar">@events</span>.<span class="ruby-identifier">page</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:page</span>]).<span class="ruby-identifier">per</span>(<span class="ruby-value">10</span>)
+  <span class="ruby-identifier">render</span> <span class="ruby-string">&quot;installations/events/index&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 7</span>
+ <span class="ruby-keyword">def</span> <span class="ruby-identifier">new</span>
+   <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@installation</span>)
+      <span class="ruby-ivar">@event</span> = <span class="ruby-ivar">@installation</span>.<span class="ruby-identifier">events</span>.<span class="ruby-identifier">build</span>
+
+      <span class="ruby-ivar">@photo_to_display</span> = <span class="ruby-ivar">@carousel</span>.<span class="ruby-identifier">photo_to_display_for</span>(<span class="ruby-ivar">@installation</span>)
+      <span class="ruby-identifier">render</span> <span class="ruby-identifier">determine_render_target_by_installation_state</span>(<span class="ruby-ivar">@installation</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span>
+   <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">errors_installation_missing_path</span>(<span class="ruby-identifier">invalid_designation</span><span class="ruby-operator">:</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:installation_id</span>])
+   <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-i-next" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">next</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="next-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">next</span>
+  <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@installation</span>)
+    <span class="ruby-ivar">@event</span> = <span class="ruby-ivar">@installation</span>.<span class="ruby-identifier">events</span>.<span class="ruby-identifier">build</span>
+    <span class="ruby-ivar">@photo_to_display</span> = <span class="ruby-ivar">@carousel</span>.<span class="ruby-identifier">next_photo_to_display_for</span>(<span class="ruby-ivar">@installation</span>)
+    <span class="ruby-identifier">render</span> <span class="ruby-identifier">determine_render_target_by_installation_state</span>(<span class="ruby-ivar">@installation</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">errors_installation_missing_path</span>(<span class="ruby-identifier">invalid_designation</span><span class="ruby-operator">:</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:installation_id</span>])
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- next-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- next-method -->
+
+    
+      <div id="method-i-previous" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">previous</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="previous-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">previous</span>
+  <span class="ruby-keyword">if</span>(<span class="ruby-ivar">@installation</span>)
+    <span class="ruby-ivar">@event</span> = <span class="ruby-ivar">@installation</span>.<span class="ruby-identifier">events</span>.<span class="ruby-identifier">build</span>
+    <span class="ruby-ivar">@photo_to_display</span> = <span class="ruby-ivar">@carousel</span>.<span class="ruby-identifier">previous_photo_to_display_for</span>(<span class="ruby-ivar">@installation</span>)
+    <span class="ruby-identifier">render</span> <span class="ruby-identifier">determine_render_target_by_installation_state</span>(<span class="ruby-ivar">@installation</span>) <span class="ruby-keyword">and</span> <span class="ruby-keyword">return</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">redirect_to</span> <span class="ruby-identifier">errors_installation_missing_path</span>(<span class="ruby-identifier">invalid_designation</span><span class="ruby-operator">:</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:installation_id</span>])
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- previous-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- previous-method -->
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre><span class="ruby-comment"># File app/controllers/events_installations_controller.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">update</span>
+   <span class="ruby-ivar">@event</span> = <span class="ruby-constant">Event</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:id</span>])
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@event</span>.<span class="ruby-identifier">update_attributes</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:event</span>])
+    <span class="ruby-identifier">handle_success_edit</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">handle_failed_edit</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- update-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

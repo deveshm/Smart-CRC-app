@@ -1,0 +1,14 @@
+
+<div class="row span12">
+<%= render @installation , current_view: "edit"%>
+</div>
+
+<div class="row">
+  <div class="span12 well">
+
+      <h2>Add/view notes for an event</h2>
+
+      <%= render  'events/edit_event' , cancel_path: installation_events_path(@event.installation)  %>
+
+  </div>
+</div>

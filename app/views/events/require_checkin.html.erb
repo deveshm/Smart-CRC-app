@@ -1,0 +1,33 @@
+
+<% content_for :buttons do %>
+	<%# this form is for creating an event for this installation %>
+  	<%= form_for [@installation,@event] do |f| %>
+
+		<% flash.each do |key, value| %>
+	     	<div class="alert alert-<%= key %>"><%= value %></div>
+	    <% end %>
+
+		<%= f.submit "I am OK", class: "btn btn-success btn-large btn-bold span12",  id: "send_OK" , name: "OK"%>
+		<div class="smaller_spacer"></div>
+
+		<%# may have to create a new form for this button %>
+		<%= f.submit "I am not OK", class: "btn btn-danger btn-large btn-bold span12",  id: "send_not_OK" , name: "notOK"%>
+
+	<% end %> 
+
+<% end %>
+
+<% content_for :background_image do %>
+<body class="body-with-no-padding"  onLoad="pulseBackgroundImage();startUp(<%=@installation.medication_reminder%>, <%=@installation.medication_reminder_two%>, <%=@installation.medication_reminder_three%>, true);">
+
+	<%if @photo_to_display && @photo_to_display.has_photo? %>	
+	   <div  class="bigpicture custom_carer_image requiring_checkin" id="<%=@photo_to_display.photo_name_as_alphanumeric%>" style="background-image: url('<%= generate_photo_url %>')">
+    <%else%> 
+	   <div  class="bigpicture default_carer_image requiring_checkin" id="default_image" style="background-image: url('/assets/default_landscape.jpg')" >
+    <%end%>
+<%end%>
+
+<% content_for :message do %>
+    <%= render  'events/caption'%>
+<%end%>
+  

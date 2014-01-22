@@ -1,0 +1,30 @@
+<div id="installation_banner" class="row well">
+	<div class="span3">
+		<label class="data-label muted"><small>Name</label></small><span id="installation_name"><%= installation.name %></span>
+	</div>
+	<div class="span3">		
+		<label class="data-label muted"><small>Phone</small></label><span id="installation_phone"><%= installation.phone %></span>
+	</div>
+	<div class="span3">
+		<label class="data-label muted"><small>Designation</small></label><span id="installation_designation"><%= installation.designation %></span>
+	</div>
+	<ul class="breadcrumb">  
+	  <%if current_view == "alerts"%>
+	  		<li class="active">Alerts</li>  
+	  <%else%>	
+		  <li><%= link_to "Alerts  ",    installation_alerts_path(installation) , id: 'installation_alerts'%></li> 
+	  <%end%>
+	  <span class="divider">
+	  <span class="divider">
+	  <%if current_view == "events"%>
+	  		<li class="active">Events</li>  
+	  <%else%>	
+		 	<li><%= link_to "Events",    installation_events_path(installation) , id: 'installation_events'%></li> 
+	  <%end%>
+	  <span class="divider">
+	  <span class="divider">	
+	  <li><%= link_to "Send Event",    new_installation_event_path(installation) , id: 'installation_send_event'%></li> 
+	</ul>	
+
+
+</div>	

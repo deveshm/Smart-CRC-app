@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Message - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/message.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-determine_raw_message_prefix">::determine_raw_message_prefix</a>
+    
+    <li><a href="#method-i-calculate_message_prefix">#calculate_message_prefix</a>
+    
+    <li><a href="#method-i-caption">#caption</a>
+    
+    <li><a href="#method-i-has_photo-3F">#has_photo?</a>
+    
+    <li><a href="#method-i-interrupt-3F">#interrupt?</a>
+    
+    <li><a href="#method-i-merge_image">#merge_image</a>
+    
+    <li><a href="#method-i-photo_name_as_alphanumeric">#photo_name_as_alphanumeric</a>
+    
+    <li><a href="#method-i-retrive_url">#retrive_url</a>
+    
+    <li><a href="#method-i-safely_set_text">#safely_set_text</a>
+    
+    <li><a href="#method-i-set_text">#set_text</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./EtagRemover.html">EtagRemover</a>
+  
+    <li><a href="./EtagRemover/Request.html">EtagRemover::Request</a>
+  
+    <li><a href="./EtagRemover/Response.html">EtagRemover::Response</a>
+  
+    <li><a href="./Alert.html">Alert</a>
+  
+    <li><a href="./Alert/AlertType.html">Alert::AlertType</a>
+  
+    <li><a href="./Event.html">Event</a>
+  
+    <li><a href="./Event/EventType.html">Event::EventType</a>
+  
+    <li><a href="./Installation.html">Installation</a>
+  
+    <li><a href="./Installation/State.html">Installation::State</a>
+  
+    <li><a href="./Message.html">Message</a>
+  
+    <li><a href="./Message/Type.html">Message::Type</a>
+  
+    <li><a href="./AlertsController.html">AlertsController</a>
+  
+    <li><a href="./AlertsHelper.html">AlertsHelper</a>
+  
+    <li><a href="./AlertsInstallationsController.html">AlertsInstallationsController</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Carousel.html">Carousel</a>
+  
+    <li><a href="./Conversation.html">Conversation</a>
+  
+    <li><a href="./ConversationsController.html">ConversationsController</a>
+  
+    <li><a href="./ErrorsController.html">ErrorsController</a>
+  
+    <li><a href="./ErrorsHelper.html">ErrorsHelper</a>
+  
+    <li><a href="./EventAnalyzer.html">EventAnalyzer</a>
+  
+    <li><a href="./EventObserver.html">EventObserver</a>
+  
+    <li><a href="./EventsController.html">EventsController</a>
+  
+    <li><a href="./EventsHelper.html">EventsHelper</a>
+  
+    <li><a href="./EventsInstallationsController.html">EventsInstallationsController</a>
+  
+    <li><a href="./InstallationMailer.html">InstallationMailer</a>
+  
+    <li><a href="./InstallationsController.html">InstallationsController</a>
+  
+    <li><a href="./InstallationsHelper.html">InstallationsHelper</a>
+  
+    <li><a href="./JobsController.html">JobsController</a>
+  
+    <li><a href="./MailSynch.html">MailSynch</a>
+  
+    <li><a href="./MessagesController.html">MessagesController</a>
+  
+    <li><a href="./UsageEvent.html">UsageEvent</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Message</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-start_of_conversation" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">start_of_conversation</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-determine_raw_message_prefix" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">determine_raw_message_prefix</span><span
+            class="method-args">(text_to_strip)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="determine_raw_message_prefix-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">determine_raw_message_prefix</span> <span class="ruby-identifier">text_to_strip</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">text_to_strip</span>
+  <span class="ruby-identifier">text_to_strip</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/Re\: /</span>,<span class="ruby-string">''</span>).<span class="ruby-identifier">partition</span>(<span class="ruby-string">&quot; : &quot;</span>)[<span class="ruby-value">0</span>]  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- determine_raw_message_prefix-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- determine_raw_message_prefix-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-calculate_message_prefix" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">calculate_message_prefix</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="calculate_message_prefix-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 81</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">calculate_message_prefix</span>
+  <span class="ruby-constant">Message</span>.<span class="ruby-identifier">determine_raw_message_prefix</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">text</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- calculate_message_prefix-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- calculate_message_prefix-method -->
+
+    
+      <div id="method-i-caption" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">caption</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="caption-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 46</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">caption</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">text</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">text</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">256</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">text</span>.<span class="ruby-identifier">slice</span>(<span class="ruby-value">0</span>,<span class="ruby-value">252</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;...&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">text</span>
+    <span class="ruby-keyword">end</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- caption-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- caption-method -->
+
+    
+      <div id="method-i-has_photo-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">has_photo?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="has_photo-3F-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 67</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">has_photo?</span>
+  <span class="ruby-operator">!</span><span class="ruby-keyword">self</span>.<span class="ruby-identifier">photo_file_name</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">||</span>  (<span class="ruby-identifier">start_of_conversation</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">start_of_conversation</span>.<span class="ruby-identifier">photo_file_name</span>.<span class="ruby-identifier">blank?</span> )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- has_photo-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- has_photo-3F-method -->
+
+    
+      <div id="method-i-interrupt-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">interrupt?</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="interrupt-3F-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 63</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">interrupt?</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">interrupt</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- interrupt-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- interrupt-3F-method -->
+
+    
+      <div id="method-i-merge_image" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">merge_image</span><span
+            class="method-args">(request_url,image_to_overlay)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="merge_image-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">merge_image</span>(<span class="ruby-identifier">request_url</span>,<span class="ruby-identifier">image_to_overlay</span>)
+        <span class="ruby-identifier">underlay</span>  = <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">from_blob</span>(<span class="ruby-identifier">open</span>(<span class="ruby-identifier">retrive_url</span>(<span class="ruby-identifier">request_url</span>,<span class="ruby-value">:original</span>)).<span class="ruby-identifier">read</span>).<span class="ruby-identifier">first</span>
+        <span class="ruby-identifier">overlay</span> =   <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">Image</span>.<span class="ruby-identifier">from_blob</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">Rails</span>.<span class="ruby-identifier">root</span>, <span class="ruby-string">'app'</span>,<span class="ruby-string">'assets'</span>,<span class="ruby-string">'images'</span>, <span class="ruby-identifier">image_to_overlay</span>))).<span class="ruby-identifier">first</span>
+        <span class="ruby-identifier">overlay_over_underlay</span> = <span class="ruby-identifier">underlay</span>.<span class="ruby-identifier">composite</span>(<span class="ruby-identifier">overlay</span>, <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">CenterGravity</span>, <span class="ruby-value">0</span>, <span class="ruby-value">0</span>, <span class="ruby-constant">Magick</span><span class="ruby-operator">::</span><span class="ruby-constant">OverCompositeOp</span>) <span class="ruby-comment">#the 0,0 is the x,y</span>
+    <span class="ruby-identifier">overlay_over_underlay</span>.<span class="ruby-identifier">format</span> = <span class="ruby-string">&quot;jpeg&quot;</span>
+    <span class="ruby-identifier">overlay_over_underlay_blob</span> = <span class="ruby-identifier">overlay_over_underlay</span>.<span class="ruby-identifier">to_blob</span>
+    <span class="ruby-identifier">overlay_over_underlay</span>.<span class="ruby-identifier">destroy!</span>
+    <span class="ruby-identifier">overlay_over_underlay_blob</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- merge_image-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- merge_image-method -->
+
+    
+      <div id="method-i-photo_name_as_alphanumeric" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo_name_as_alphanumeric</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="photo_name_as_alphanumeric-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 54</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo_name_as_alphanumeric</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">start_of_conversation</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">start_of_conversation</span>.<span class="ruby-identifier">photo_file_name</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-identifier">start_of_conversation</span>.<span class="ruby-identifier">photo_file_name</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/\W/</span>,<span class="ruby-string">''</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">photo_file_name</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/\W/</span>,<span class="ruby-string">''</span>) 
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo_name_as_alphanumeric-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo_name_as_alphanumeric-method -->
+
+    
+      <div id="method-i-retrive_url" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">retrive_url</span><span
+            class="method-args">(request_url,style)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="retrive_url-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">retrive_url</span>(<span class="ruby-identifier">request_url</span>,<span class="ruby-identifier">style</span>)
+    <span class="ruby-identifier">recalibated_url</span> = <span class="ruby-identifier">photo</span>.<span class="ruby-identifier">url</span>(<span class="ruby-identifier">style</span>).<span class="ruby-identifier">sub</span>(<span class="ruby-string">'s3.amazonaws.com'</span>,<span class="ruby-string">'s3-ap-southeast-2.amazonaws.com'</span>)
+    <span class="ruby-constant">URI</span>.<span class="ruby-identifier">join</span>(<span class="ruby-identifier">request_url</span>, <span class="ruby-identifier">recalibated_url</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- retrive_url-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- retrive_url-method -->
+
+    
+      <div id="method-i-safely_set_text" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">safely_set_text</span><span
+            class="method-args">(text)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="safely_set_text-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">safely_set_text</span> <span class="ruby-identifier">text</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">text</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">text</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">1000</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">text</span> = <span class="ruby-identifier">text</span>.<span class="ruby-identifier">slice</span>(<span class="ruby-value">0</span>,<span class="ruby-value">997</span>) <span class="ruby-operator">+</span> <span class="ruby-string">&quot;...&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-keyword">self</span>.<span class="ruby-identifier">text</span> = <span class="ruby-identifier">text</span>
+    <span class="ruby-keyword">end</span>  
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- safely_set_text-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- safely_set_text-method -->
+
+    
+      <div id="method-i-set_text" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">set_text</span><span
+            class="method-args">(main_text, prefix_text)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="set_text-source">
+            <pre><span class="ruby-comment"># File app/models/message.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">set_text</span> <span class="ruby-identifier">main_text</span>, <span class="ruby-identifier">prefix_text</span>
+  <span class="ruby-identifier">content</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">prefix_text</span>.<span class="ruby-identifier">blank?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">main_text</span>.<span class="ruby-identifier">blank?</span>
+    <span class="ruby-identifier">content</span> = <span class="ruby-node">&quot;#{prefix_text} : #{main_text}&quot;</span>
+  <span class="ruby-keyword">else</span>
+     <span class="ruby-identifier">content</span> = <span class="ruby-node">&quot;#{prefix_text}#{main_text}&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">safely_set_text</span> <span class="ruby-identifier">content</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- set_text-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- set_text-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

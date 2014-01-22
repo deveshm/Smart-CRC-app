@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lean</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<div class="container-fluid max-screen">
+  <div class="row">
+    <div class="span3">
+      <!--Sidebar content-->
+      	<%= yield :sidebar_content%>
+    </div>
+    <div class="span9 shaded_background off-sides">
+      <!--Body content-->
+		    <%= yield :message_history%>
+    </div>
+  </div>
+  	<div class="row pull-left">
+  		<div class="span3 off-sides">
+			<%= link_to "Back",   new_installation_event_path(@conversation.installation)  , id:  "return_to_send_events",  class: "btn btn-info btn-bold btn-large span2"%>
+		</div>
+	</div>	
+</div>
+
+
+</body>
+</html>

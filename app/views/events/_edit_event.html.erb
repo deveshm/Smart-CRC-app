@@ -1,0 +1,16 @@
+
+<%= form_for [@installation,@event] do |f| %>
+
+<%= render 'shared/error_messages' , object: f.object %>
+
+
+<div class="row span12">
+    <%= f.label :note , "Note"%>
+    <%= f.text_area :note, class: "span11" %>
+
+<div class="row">
+	<%= f.submit "Save" ,class: "btn btn-large btn-primary", id: "update_event" %>
+	<%= link_to "Cancel",    cancel_path, id: "event_edit_cancel" , class: 'btn btn-large'%>
+	<% end %>
+</div>
+</div>

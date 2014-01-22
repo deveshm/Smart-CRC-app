@@ -1,0 +1,29 @@
+<% content_for :sidebar_content do %>
+<%end%>
+
+<% content_for :message_history do %>
+	<div class="row">
+		<h1 class="span3">Messages</h1>
+	</div>
+	<div class="row off-sides">
+		<table class="table" id="messages">
+		  <tr>
+		    <th id="conversation_header">Recent Conversations with <%=@conversation.display_as%></th>
+		  </tr>
+		 <% @conversation.messages.except(:order).order("created_at DESC").limit(10).reverse.each do |message| %>
+		 <tr class="message">
+		    <td class ="display_as_<%=message.message_type%> lead"><%=message.image_text%></td>
+		  </tr>
+		  <% end %>
+		</table>
+	</div>    
+	<div class="row">
+		<div class="offset1">
+			<%= form_tag(reply_conversation_path(@conversation), :method => "post") do %>
+			  <%= label_tag(:reply_text, "Enter any reply below:", :class => "lead") %>
+			  <%= text_area_tag(:reply_text, content = nil, :class => "span6 reply_text", :rows => "4") %>
+			  <%= submit_tag("Reply", :class => "btn btn-primary btn-bold btn-large span2") %>  
+			<% end %> 
+		</div>
+	</div>
+<%end%>

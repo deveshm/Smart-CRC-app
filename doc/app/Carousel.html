@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Carousel - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/carousel.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-add_photo_if_missing_to">#add_photo_if_missing_to</a>
+    
+    <li><a href="#method-i-determine_current_span_for">#determine_current_span_for</a>
+    
+    <li><a href="#method-i-fetch_and_update_next_undisplayed_image">#fetch_and_update_next_undisplayed_image</a>
+    
+    <li><a href="#method-i-fetch_current_active_photo">#fetch_current_active_photo</a>
+    
+    <li><a href="#method-i-fetch_current_interrupt_reset_if_not_current">#fetch_current_interrupt_reset_if_not_current</a>
+    
+    <li><a href="#method-i-fetch_next_active_photo">#fetch_next_active_photo</a>
+    
+    <li><a href="#method-i-fetch_next_active_photo_and_make_active">#fetch_next_active_photo_and_make_active</a>
+    
+    <li><a href="#method-i-fetch_previous_active_photo">#fetch_previous_active_photo</a>
+    
+    <li><a href="#method-i-next_photo_to_display_for">#next_photo_to_display_for</a>
+    
+    <li><a href="#method-i-photo_to_display_for">#photo_to_display_for</a>
+    
+    <li><a href="#method-i-previous_photo_to_display_for">#previous_photo_to_display_for</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./EtagRemover.html">EtagRemover</a>
+  
+    <li><a href="./EtagRemover/Request.html">EtagRemover::Request</a>
+  
+    <li><a href="./EtagRemover/Response.html">EtagRemover::Response</a>
+  
+    <li><a href="./Alert.html">Alert</a>
+  
+    <li><a href="./Alert/AlertType.html">Alert::AlertType</a>
+  
+    <li><a href="./Event.html">Event</a>
+  
+    <li><a href="./Event/EventType.html">Event::EventType</a>
+  
+    <li><a href="./Installation.html">Installation</a>
+  
+    <li><a href="./Installation/State.html">Installation::State</a>
+  
+    <li><a href="./Message.html">Message</a>
+  
+    <li><a href="./Message/Type.html">Message::Type</a>
+  
+    <li><a href="./AlertsController.html">AlertsController</a>
+  
+    <li><a href="./AlertsHelper.html">AlertsHelper</a>
+  
+    <li><a href="./AlertsInstallationsController.html">AlertsInstallationsController</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Carousel.html">Carousel</a>
+  
+    <li><a href="./Conversation.html">Conversation</a>
+  
+    <li><a href="./ConversationsController.html">ConversationsController</a>
+  
+    <li><a href="./ErrorsController.html">ErrorsController</a>
+  
+    <li><a href="./ErrorsHelper.html">ErrorsHelper</a>
+  
+    <li><a href="./EventAnalyzer.html">EventAnalyzer</a>
+  
+    <li><a href="./EventObserver.html">EventObserver</a>
+  
+    <li><a href="./EventsController.html">EventsController</a>
+  
+    <li><a href="./EventsHelper.html">EventsHelper</a>
+  
+    <li><a href="./EventsInstallationsController.html">EventsInstallationsController</a>
+  
+    <li><a href="./InstallationMailer.html">InstallationMailer</a>
+  
+    <li><a href="./InstallationsController.html">InstallationsController</a>
+  
+    <li><a href="./InstallationsHelper.html">InstallationsHelper</a>
+  
+    <li><a href="./JobsController.html">JobsController</a>
+  
+    <li><a href="./MailSynch.html">MailSynch</a>
+  
+    <li><a href="./MessagesController.html">MessagesController</a>
+  
+    <li><a href="./UsageEvent.html">UsageEvent</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Carousel</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="MINUTES_IN_DAY">MINUTES_IN_DAY
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-add_photo_if_missing_to" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_photo_if_missing_to</span><span
+            class="method-args">(message)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="add_photo_if_missing_to-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 130</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">add_photo_if_missing_to</span> <span class="ruby-identifier">message</span>
+  <span class="ruby-keyword">unless</span> <span class="ruby-identifier">message</span>.<span class="ruby-identifier">photo_file_name</span>
+    <span class="ruby-identifier">prefix</span> = <span class="ruby-identifier">message</span>.<span class="ruby-identifier">calculate_message_prefix</span>
+    <span class="ruby-identifier">start_of_conversation</span> = <span class="ruby-identifier">message</span>.<span class="ruby-identifier">conversation</span>.<span class="ruby-identifier">messages</span>.<span class="ruby-identifier">except</span>(<span class="ruby-value">:order</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;created_at&quot;</span>).<span class="ruby-identifier">first</span>
+    <span class="ruby-identifier">message</span>.<span class="ruby-identifier">start_of_conversation</span> = <span class="ruby-identifier">start_of_conversation</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">message</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_photo_if_missing_to-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_photo_if_missing_to-method -->
+
+    
+      <div id="method-i-determine_current_span_for" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">determine_current_span_for</span><span
+            class="method-args">(installation)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="determine_current_span_for-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">determine_current_span_for</span> <span class="ruby-identifier">installation</span>
+  <span class="ruby-identifier">current_time</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>
+  <span class="ruby-identifier">minute_of_day</span> = ((<span class="ruby-identifier">current_time</span>.<span class="ruby-identifier">hour</span>*<span class="ruby-value">60</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">current_time</span>.<span class="ruby-identifier">min</span>)
+  <span class="ruby-identifier">minutes_in_span</span> = <span class="ruby-value">1440</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">photo_refreshes_per_day</span>
+
+  <span class="ruby-identifier">start_of_span</span> = <span class="ruby-identifier">current_time</span>.<span class="ruby-identifier">midnight</span> <span class="ruby-operator">+</span> ((<span class="ruby-identifier">minute_of_day</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">minutes_in_span</span>) * <span class="ruby-identifier">minutes_in_span</span>).<span class="ruby-identifier">minutes</span>
+  <span class="ruby-identifier">end_of_span</span> = <span class="ruby-identifier">current_time</span>.<span class="ruby-identifier">midnight</span> <span class="ruby-operator">+</span> ((<span class="ruby-identifier">minute_of_day</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">minutes_in_span</span>) * <span class="ruby-identifier">minutes_in_span</span>).<span class="ruby-identifier">minutes</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">minutes_in_span</span>.<span class="ruby-identifier">minutes</span>
+  <span class="ruby-identifier">end_of_span</span> = <span class="ruby-identifier">end_of_span</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>.<span class="ruby-identifier">seconds</span>
+  <span class="ruby-identifier">start_of_span</span><span class="ruby-operator">..</span><span class="ruby-identifier">end_of_span</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- determine_current_span_for-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- determine_current_span_for-method -->
+
+    
+      <div id="method-i-fetch_and_update_next_undisplayed_image" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_and_update_next_undisplayed_image</span><span
+            class="method-args">(messages)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_and_update_next_undisplayed_image-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 65</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_and_update_next_undisplayed_image</span> <span class="ruby-identifier">messages</span>
+  <span class="ruby-identifier">message_types_that_can_be_on_carousel</span> = [<span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL_REPLY</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL_ATTACHMENT</span>]
+  <span class="ruby-identifier">undisplayed_image</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;last_display_in_carousel IS NULL AND message_type IN (?)&quot;</span>, <span class="ruby-identifier">message_types_that_can_be_on_carousel</span>).<span class="ruby-identifier">first</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">undisplayed_image</span>
+    <span class="ruby-identifier">undisplayed_image</span>.<span class="ruby-identifier">last_display_in_carousel</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>
+    <span class="ruby-identifier">undisplayed_image</span>.<span class="ruby-identifier">interrupt</span> = <span class="ruby-keyword">true</span>
+    <span class="ruby-identifier">undisplayed_image</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">undisplayed_image</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_and_update_next_undisplayed_image-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_and_update_next_undisplayed_image-method -->
+
+    
+      <div id="method-i-fetch_current_active_photo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_current_active_photo</span><span
+            class="method-args">(messages, span)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_current_active_photo-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_current_active_photo</span>(<span class="ruby-identifier">messages</span>, <span class="ruby-identifier">span</span>)
+  <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">except</span>(<span class="ruby-value">:order</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;last_display_in_carousel DESC&quot;</span>).<span class="ruby-identifier">where</span>(<span class="ruby-value">:last_display_in_carousel</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">span</span>).<span class="ruby-identifier">first</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_current_active_photo-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_current_active_photo-method -->
+
+    
+      <div id="method-i-fetch_current_interrupt_reset_if_not_current" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_current_interrupt_reset_if_not_current</span><span
+            class="method-args">(installation, messages)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_current_interrupt_reset_if_not_current-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 53</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_current_interrupt_reset_if_not_current</span>(<span class="ruby-identifier">installation</span>, <span class="ruby-identifier">messages</span>)
+
+  <span class="ruby-identifier">current_interrupt</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;interrupt = ?&quot;</span>, <span class="ruby-keyword">true</span>).<span class="ruby-identifier">first</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">current_interrupt</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">current_interrupt</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span> <span class="ruby-operator">&lt;</span> ((<span class="ruby-identifier">current_interrupt</span>.<span class="ruby-identifier">last_display_in_carousel</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">interrupt_duration</span>.<span class="ruby-identifier">minutes</span>) <span class="ruby-operator">-</span><span class="ruby-value">1</span>.<span class="ruby-identifier">seconds</span>)
+    <span class="ruby-identifier">current_interrupt</span>.<span class="ruby-identifier">interrupt</span> = <span class="ruby-keyword">false</span>
+    <span class="ruby-identifier">current_interrupt</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_current_interrupt_reset_if_not_current-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_current_interrupt_reset_if_not_current-method -->
+
+    
+      <div id="method-i-fetch_next_active_photo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_next_active_photo</span><span
+            class="method-args">(messages)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_next_active_photo-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 114</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_next_active_photo</span>(<span class="ruby-identifier">messages</span>)
+
+  <span class="ruby-identifier">message_types_that_can_be_on_carousel</span> = [<span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL_REPLY</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL_ATTACHMENT</span>]
+  <span class="ruby-identifier">current_photo</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">except</span>(<span class="ruby-value">:order</span>).<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;last_display_in_carousel IS NOT NULL AND message_type IN (?)&quot;</span>, <span class="ruby-identifier">message_types_that_can_be_on_carousel</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;last_display_in_carousel DESC&quot;</span>).<span class="ruby-identifier">first</span>
+  <span class="ruby-identifier">current_photo</span>.<span class="ruby-identifier">interrupt</span> = <span class="ruby-keyword">false</span>
+  <span class="ruby-identifier">current_photo</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-identifier">messages_displayable</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;message_type IN (?)&quot;</span>, <span class="ruby-identifier">message_types_that_can_be_on_carousel</span>)
+
+  <span class="ruby-identifier">photo</span> = <span class="ruby-identifier">messages_displayable</span>[(<span class="ruby-identifier">messages_displayable</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">current_photo</span>)<span class="ruby-operator">+</span><span class="ruby-value">1</span>).<span class="ruby-identifier">modulo</span>(<span class="ruby-identifier">messages_displayable</span>.<span class="ruby-identifier">size</span>)]
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">photo</span>
+    <span class="ruby-identifier">photo</span>.<span class="ruby-identifier">last_display_in_carousel</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>
+    <span class="ruby-identifier">photo</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">photo</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_next_active_photo-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_next_active_photo-method -->
+
+    
+      <div id="method-i-fetch_next_active_photo_and_make_active" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_next_active_photo_and_make_active</span><span
+            class="method-args">(messages, span)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_next_active_photo_and_make_active-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_next_active_photo_and_make_active</span>(<span class="ruby-identifier">messages</span>, <span class="ruby-identifier">span</span>)
+  <span class="ruby-identifier">active_photo_for_previous_span</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">except</span>(<span class="ruby-value">:order</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;last_display_in_carousel DESC&quot;</span>).<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;last_display_in_carousel IS NOT NULL&quot;</span>).<span class="ruby-identifier">first</span>
+  <span class="ruby-comment">#puts &quot;active_photo_for_previous_span #{active_photo_for_previous_span ? active_photo_for_previous_span.text : 'nil'}&quot;</span>
+
+  <span class="ruby-identifier">active_photo</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">except</span>(<span class="ruby-value">:order</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;created_at DESC&quot;</span>).<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;(photo_file_name IS NOT NULL OR message_type = ?)AND created_at &lt; ?&quot;</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL</span>, <span class="ruby-identifier">active_photo_for_previous_span</span>.<span class="ruby-identifier">created_at</span>).<span class="ruby-identifier">first</span>
+  <span class="ruby-comment">#puts &quot;active_photo before the active photo for previous span #{active_photo ? active_photo.text : 'nil'}&quot;</span>
+  <span class="ruby-identifier">active_photo</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">except</span>(<span class="ruby-value">:order</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;created_at DESC&quot;</span>).<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;photo_file_name IS NOT NULL OR message_type = ?&quot;</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL</span>).<span class="ruby-identifier">first</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">active_photo</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">active_photo</span>
+  <span class="ruby-identifier">active_photo</span>.<span class="ruby-identifier">last_display_in_carousel</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>
+  <span class="ruby-identifier">active_photo</span>.<span class="ruby-identifier">save</span>
+
+  <span class="ruby-comment">#puts &quot;active_photo #{active_photo ? active_photo.text : 'nil'}&quot;</span>
+  <span class="ruby-identifier">active_photo</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_next_active_photo_and_make_active-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_next_active_photo_and_make_active-method -->
+
+    
+      <div id="method-i-fetch_previous_active_photo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">fetch_previous_active_photo</span><span
+            class="method-args">(messages)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="fetch_previous_active_photo-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 96</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">fetch_previous_active_photo</span>(<span class="ruby-identifier">messages</span>)
+  <span class="ruby-identifier">message_types_that_can_be_on_carousel</span> = [<span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL_REPLY</span>, <span class="ruby-constant">Message</span><span class="ruby-operator">::</span><span class="ruby-constant">Type</span><span class="ruby-operator">::</span><span class="ruby-constant">EXTERNAL_ATTACHMENT</span>]
+  <span class="ruby-identifier">current_photo</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">except</span>(<span class="ruby-value">:order</span>).<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;last_display_in_carousel IS NOT NULL AND message_type IN (?)&quot;</span>, <span class="ruby-identifier">message_types_that_can_be_on_carousel</span>).<span class="ruby-identifier">order</span>(<span class="ruby-string">&quot;last_display_in_carousel DESC&quot;</span>).<span class="ruby-identifier">first</span>
+  <span class="ruby-identifier">current_photo</span>.<span class="ruby-identifier">interrupt</span> = <span class="ruby-keyword">false</span>
+  <span class="ruby-identifier">current_photo</span>.<span class="ruby-identifier">save</span>
+
+  <span class="ruby-identifier">messages_displayable</span> = <span class="ruby-identifier">messages</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;message_type IN (?)&quot;</span>, <span class="ruby-identifier">message_types_that_can_be_on_carousel</span>)
+
+  <span class="ruby-identifier">photo</span> = <span class="ruby-identifier">messages_displayable</span>[(<span class="ruby-identifier">messages_displayable</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">current_photo</span>)<span class="ruby-operator">-</span><span class="ruby-value">1</span>).<span class="ruby-identifier">modulo</span>(<span class="ruby-identifier">messages_displayable</span>.<span class="ruby-identifier">size</span>)]
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">photo</span>
+    <span class="ruby-identifier">photo</span>.<span class="ruby-identifier">last_display_in_carousel</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">zone</span>.<span class="ruby-identifier">now</span>
+    <span class="ruby-identifier">photo</span>.<span class="ruby-identifier">save</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">photo</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- fetch_previous_active_photo-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- fetch_previous_active_photo-method -->
+
+    
+      <div id="method-i-next_photo_to_display_for" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">next_photo_to_display_for</span><span
+            class="method-args">(installation)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="next_photo_to_display_for-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">next_photo_to_display_for</span>(<span class="ruby-identifier">installation</span>)
+
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">fetch_next_active_photo</span>(<span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- next_photo_to_display_for-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- next_photo_to_display_for-method -->
+
+    
+      <div id="method-i-photo_to_display_for" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">photo_to_display_for</span><span
+            class="method-args">(installation)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="photo_to_display_for-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">photo_to_display_for</span>(<span class="ruby-identifier">installation</span>)
+
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>.<span class="ruby-identifier">empty?</span>
+
+  <span class="ruby-identifier">span</span> = <span class="ruby-identifier">determine_current_span_for</span> <span class="ruby-identifier">installation</span>
+
+  <span class="ruby-identifier">existing_interrupt</span> = <span class="ruby-identifier">fetch_current_interrupt_reset_if_not_current</span>(<span class="ruby-identifier">installation</span>, <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>)
+  <span class="ruby-comment">#puts &quot;******** existing_interrupt #{existing_interrupt ? existing_interrupt.text : 'nil'}&quot;</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">add_photo_if_missing_to</span>(<span class="ruby-identifier">existing_interrupt</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">existing_interrupt</span>
+
+  <span class="ruby-identifier">next_undisplayed_image</span> = <span class="ruby-identifier">fetch_and_update_next_undisplayed_image</span> <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>
+  <span class="ruby-comment">#puts &quot;next_undisplayed_image #{next_undisplayed_image ? next_undisplayed_image.text : 'nil'}&quot;</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">add_photo_if_missing_to</span>(<span class="ruby-identifier">next_undisplayed_image</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">next_undisplayed_image</span>
+  <span class="ruby-identifier">current_active_photo</span> = <span class="ruby-identifier">fetch_current_active_photo</span>(<span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>, <span class="ruby-identifier">span</span>)
+
+
+  <span class="ruby-comment">#puts &quot;current_active_photo #{current_active_photo ? current_active_photo.text : 'nil'}&quot;</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">add_photo_if_missing_to</span> <span class="ruby-identifier">current_active_photo</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">current_active_photo</span>
+
+  <span class="ruby-identifier">fetch_next_active_photo_and_make_active</span>(<span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>, <span class="ruby-identifier">span</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- photo_to_display_for-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- photo_to_display_for-method -->
+
+    
+      <div id="method-i-previous_photo_to_display_for" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">previous_photo_to_display_for</span><span
+            class="method-args">(installation)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="previous_photo_to_display_for-source">
+            <pre><span class="ruby-comment"># File app/models/carousel.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">previous_photo_to_display_for</span>(<span class="ruby-identifier">installation</span>)
+
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">fetch_previous_active_photo</span>(<span class="ruby-identifier">installation</span>.<span class="ruby-identifier">messages</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- previous_photo_to_display_for-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- previous_photo_to_display_for-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wellbeing Check</title>
+  <link rel="shortcut icon" href="/assets/healthicon.ico">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+
+
+<%= javascript_tag do %>
+  refresh_url = '<%= j new_installation_event_path(@installation) %>';
+  previous_url = '<%= j previous_installation_events_path(@installation) %>';
+  next_url = '<%= j next_installation_events_path(@installation) %>';
+  movement_url = '<%= j movement_installation_path(@installation) %>';
+
+<% end %>
+
+<div id="div_to_refeshed">	
+	<div id="error_on_refresh"></div>
+
+	<%= yield :background_image%>
+		
+		<div class="spacer container">
+			<div class="row-fluid navbar-fixed-top span12 off-sides">
+				<div class="span8 off-sides" >
+					<%= yield :gamesbutton %>
+				</div>	
+				<div class="span3 off-sides">
+					<%= yield :buttons %>
+		  		</div>
+	  		</div>
+	  		<%= yield :message%>
+		</div>
+		
+
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+Connecting to database specified by database.yml
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:39:18 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (22.1ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (32.7ms)
+Completed 500 Internal Server Error in 369ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb__309863052_92753500'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:39:28 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (9.8ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb__309863052_92753500'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:39:29 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (5.2ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb__309863052_92753500'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:39:30 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (0.8ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb__309863052_92753500'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-26 16:39:34 +1000
+Processing by AlertsController#index as HTML
+  Rendered alerts/_alert_table.html.erb (6.9ms)
+  Rendered alerts/index.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___721857608_89295200'
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-26 16:40:34 +1000
+Processing by AlertsController#index as HTML
+  Rendered alerts/_alert_table.html.erb (4.6ms)
+  Rendered alerts/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8:   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___721857608_89295200'
+
+
+Connecting to database specified by database.yml
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:56:23 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.4ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (33.0ms)
+Completed 500 Internal Server Error in 538ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb___127244893_85492200'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:57:23 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (1.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb___127244893_85492200'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:58:23 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (1.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb___127244893_85492200'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 16:59:23 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (1.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (application.css isn't precompiled):
+    2: <html>
+    3: <head>
+    4:   <title>Lean</title>
+    5:   <%= stylesheet_link_tag    "application", :media => "all" %>
+    6:   <%= javascript_include_tag "application" %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/carousel.html.erb:5:in `_app_views_layouts_carousel_html_erb___127244893_85492200'
+  app/controllers/events_installations_controller.rb:12:in `new'
+
+
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 17:04:24 +1000
+Connecting to database specified by database.yml
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.6ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (38.7ms)
+Compiled custom.css  (964ms)  (pid 20838)
+Compiled events.css  (7ms)  (pid 20838)
+Compiled installation.css  (2ms)  (pid 20838)
+Compiled application.css  (1026ms)  (pid 20838)
+Compiled jquery.js  (25ms)  (pid 20838)
+Compiled jquery_ujs.js  (0ms)  (pid 20838)
+Compiled jquery.touchwipe.1.1.1.js  (0ms)  (pid 20838)
+Compiled spin.min.js  (0ms)  (pid 20838)
+Compiled events.js  (0ms)  (pid 20838)
+Compiled application.js  (69ms)  (pid 20838)
+Completed 200 OK in 1607ms (Views: 1331.5ms | ActiveRecord: 14.8ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:26 +1000
+Served asset /jquery.js - 200 OK (14ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:26 +1000
+Served asset /jquery_ujs.js - 200 OK (2ms)
+Started GET "/assets/jquery.touchwipe.1.1.1.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:26 +1000
+Served asset /jquery.touchwipe.1.1.1.js - 200 OK (1ms)
+Started GET "/assets/spin.min.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:26 +1000
+Served asset /spin.min.js - 200 OK (6ms)
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:26 +1000
+Served asset /events.js - 200 OK (1ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:26 +1000
+Served asset /application.js - 200 OK (14ms)
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (6.4ms)
+Completed 200 OK in 96ms (Views: 77.5ms | ActiveRecord: 14.1ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /application.css - 200 OK (25ms)
+Started GET "/assets/jquery.touchwipe.1.1.1.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /jquery.touchwipe.1.1.1.js - 304 Not Modified (0ms)
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /custom.css - 200 OK (13ms)
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /events.css - 200 OK (1ms)
+Started GET "/assets/installation.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /installation.css - 200 OK (1ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /jquery.js - 304 Not Modified (6ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Started GET "/assets/spin.min.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /spin.min.js - 304 Not Modified (0ms)
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /events.js - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /application.js - 304 Not Modified (5ms)
+Started GET "/assets/default_landscape.jpg" for 127.0.0.1 at 2013-08-26 17:04:29 +1000
+Served asset /default_landscape.jpg - 200 OK (12ms)
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (5.4ms)
+Completed 200 OK in 57ms (Views: 41.9ms | ActiveRecord: 10.7ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /application.css - 304 Not Modified (9ms)
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /custom.css - 304 Not Modified (12ms)
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /events.css - 304 Not Modified (0ms)
+Started GET "/assets/installation.css?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /installation.css - 304 Not Modified (0ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /jquery.js - 304 Not Modified (1ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Started GET "/assets/jquery.touchwipe.1.1.1.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /jquery.touchwipe.1.1.1.js - 304 Not Modified (0ms)
+Started GET "/assets/spin.min.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /spin.min.js - 304 Not Modified (0ms)
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /events.js - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /application.js - 304 Not Modified (4ms)
+Started GET "/assets/default_landscape.jpg" for 127.0.0.1 at 2013-08-26 17:04:30 +1000
+Served asset /default_landscape.jpg - 304 Not Modified (0ms)
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 17:05:30 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (1.8ms)
+Completed 200 OK in 26ms (Views: 17.7ms | ActiveRecord: 3.6ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-26 17:05:30 +1000
+Served asset /jquery.js - 304 Not Modified (2ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-26 17:05:30 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Started GET "/assets/jquery.touchwipe.1.1.1.js?body=1" for 127.0.0.1 at 2013-08-26 17:05:31 +1000
+Served asset /jquery.touchwipe.1.1.1.js - 304 Not Modified (0ms)
+Started GET "/assets/spin.min.js?body=1" for 127.0.0.1 at 2013-08-26 17:05:31 +1000
+Served asset /spin.min.js - 304 Not Modified (0ms)
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-08-26 17:05:31 +1000
+Served asset /events.js - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-26 17:05:31 +1000
+Served asset /application.js - 304 Not Modified (2ms)
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 17:06:31 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (1.5ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 1.3ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-26 17:06:31 +1000
+Served asset /jquery.js - 304 Not Modified (1ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-26 17:06:31 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Started GET "/assets/jquery.touchwipe.1.1.1.js?body=1" for 127.0.0.1 at 2013-08-26 17:06:31 +1000
+Served asset /jquery.touchwipe.1.1.1.js - 304 Not Modified (0ms)
+Started GET "/assets/spin.min.js?body=1" for 127.0.0.1 at 2013-08-26 17:06:31 +1000
+Served asset /spin.min.js - 304 Not Modified (0ms)
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-08-26 17:06:31 +1000
+Served asset /events.js - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-26 17:06:31 +1000
+Served asset /application.js - 304 Not Modified (1ms)
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 17:07:31 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (1.4ms)
+Completed 200 OK in 20ms (Views: 14.3ms | ActiveRecord: 1.7ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:31 +1000
+Served asset /jquery.js - 304 Not Modified (1ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:31 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Started GET "/assets/jquery.touchwipe.1.1.1.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:31 +1000
+Served asset /jquery.touchwipe.1.1.1.js - 304 Not Modified (0ms)
+Started GET "/assets/spin.min.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:31 +1000
+Served asset /spin.min.js - 304 Not Modified (0ms)
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:31 +1000
+Served asset /events.js - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:31 +1000
+Served asset /application.js - 304 Not Modified (2ms)
+Started GET "/installations/awesomeness/events/send" for 127.0.0.1 at 2013-08-26 17:07:51 +1000
+Processing by EventsInstallationsController#new as HTML
+  Parameters: {"installation_id"=>"awesomeness"}
+  Rendered events/_caption.html.erb (0.0ms)
+  Rendered events/sleeping.html.erb within layouts/carousel (1.6ms)
+Completed 200 OK in 30ms (Views: 14.5ms | ActiveRecord: 9.4ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-26 17:07:51 +1000
+Served asset /application.css - 304 Not Modified (9ms)
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-08-26 17:07:51 +1000
+Served asset /custom.css - 304 Not Modified (9ms)
+Started GET "/assets/events.css?body=1" for 127.0.0.1 at 2013-08-26 17:07:51 +1000
+Served asset /events.css - 304 Not Modified (0ms)
+Started GET "/assets/installation.css?body=1" for 127.0.0.1 at 2013-08-26 17:07:51 +1000
+Served asset /installation.css - 304 Not Modified (0ms)
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:52 +1000
+Served asset /jquery.js - 304 Not Modified (4ms)
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:52 +1000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Started GET "/assets/jquery.touchwipe.1.1.1.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:52 +1000
+Served asset /jquery.touchwipe.1.1.1.js - 304 Not Modified (0ms)
+Started GET "/assets/spin.min.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:52 +1000
+Served asset /spin.min.js - 304 Not Modified (0ms)
+Started GET "/assets/events.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:52 +1000
+Served asset /events.js - 304 Not Modified (0ms)
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-26 17:07:52 +1000
+Served asset /application.js - 304 Not Modified (1ms)

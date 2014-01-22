@@ -1,0 +1,35 @@
+<h2>All installations</h2>
+
+<div class="pull-right">
+<%= link_to "Add installation", new_installation_path ,class: "btn btn-large" , id: "new_installation"%>
+</div>
+
+<div class="pull-right">
+  <%= link_to "Download Usages", usage_installations_path ,class: "btn btn-large" , id: "usage_installations"%>
+</div>
+
+<div class="spacer">
+  <table class="table table-striped" id="installations">
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Designation</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <% @installations.each do |installation| %>
+    <tr class="installation">
+      <td class='installation_name'><%= installation.name%></td>
+      <td><%= installation.phone %></td>
+      <td><%= installation.designation%></td>
+      <td class="action_link"><%= link_to "Edit",    edit_installation_path(installation), class: 'installation_edit'%></td>
+      <td class="action_link"><%= link_to "View Events",    installation_events_path(installation) , class: 'installation_view_events'%></td>
+      <td class="action_link"><%= link_to "View Alerts",    installation_alerts_path(installation) , class: 'installation_view_alerts'%></td>
+      <td class="action_link"><%= link_to "Send Events",    new_installation_event_path(installation) , class: 'installation_send_events'%></td>
+    </tr>
+    <% end %>
+  </table>
+  <%= paginate @installations %>
+<div>
